@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "shadcn": "npx shadcn@latest add"
+    "shadcn": "npx shadcn@latest add",
+    "postinstall": "npm install --legacy-peer-deps"
+  },
+  "overrides": {
+    "react-day-picker/date-fns": "^3.0.0"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
