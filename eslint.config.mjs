@@ -11,6 +11,17 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "no-console"          : "error",
+      "max-len"             : ["error", { code: 120 }],
+      "object-curly-spacing": ["error", "always"],
+      "key-spacing"         : [
+        "error",
+        { align: "colon", beforeColon: false, afterColon: true },
+      ],
+    },
+  },
 ];
 
 export default eslintConfig;
