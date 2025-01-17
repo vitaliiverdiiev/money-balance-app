@@ -1,4 +1,4 @@
-type RouteKey = "home" | "dashboard";
+type RouteKey = "home" | "dashboard" | "income" | "spendings";
 
 type Route = {
   label: string;
@@ -15,5 +15,13 @@ export const routes: Routes = {
   dashboard: {
     label: "Dashboard",
     path : () => "/dashboard",
+  },
+  income: {
+    label: "Income",
+    path : () => "/income",
+  },
+  spendings: {
+    label: "Spendings",
+    path : () => "/spendings",
   },
 };
