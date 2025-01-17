@@ -13,7 +13,8 @@ import {
   FormLabel,
   FormMessage,
 } from "@/shared/ui/form";
-import { format } from "date-fns";
+import dayjs from "dayjs";
+
 import { Popover, PopoverContent, PopoverTrigger } from "@/shared/ui/popover";
 import { Calendar } from "@/shared/ui/calendar";
 import { Calendar as CalendarIcon } from "lucide-react";
@@ -78,7 +79,7 @@ export const SpendingsForm = () => {
                       )}
                     >
                       {field.value ? (
-                        format(field.value, "PPP")
+                        dayjs(field.value).format("MM/DD/YYYY")
                       ) : (
                         <span>Pick a date</span>
                       )}
