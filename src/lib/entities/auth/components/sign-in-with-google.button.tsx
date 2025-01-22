@@ -1,17 +1,17 @@
 import { signIn } from "@/entities";
 import { Button, Icon } from "@/shared/ui";
 
-export const SignInWithGithubButton = () => {
+export const SignInWithGoogleButton = () => {
   return (
     <form
       action={async () => {
         "use server";
-        await signIn("github");
+        await signIn("google");
       }}
     >
       <Button type="submit" variant="ghost">
-        <Icon icon="github" />
-        <span>Sign in with GitHub</span>
+        <Icon icon="google" />
+        <span>Sign in with Google</span>
       </Button>
     </form>
   );

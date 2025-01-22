@@ -7,7 +7,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .container {
@@ -23,6 +23,9 @@ body {
 @layer utilities {
   .body-gradient {
     @apply bg-gradient-to-tr from-slate-50 to-green-50;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 }
 
@@ -88,5 +91,22 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.form-or-divider {
+  position: relative;
+  background-color: rgb(188, 188, 188);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  margin: 2rem 0;
+
+  & span {
+    display: inline-flex;
+    background-color: white;
+    padding: 0 1em;
   }
 }

@@ -42,17 +42,17 @@ export const SpendingsForm = () => {
   });
 
   function onSubmit(values: SpendingsFormType) {
-    console.log(values);
     try {
-      console.log(values);
       toast(
         <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
           <code className="text-white">{JSON.stringify(values, null, 2)}</code>
         </pre>
       );
     } catch (error) {
-      console.error("Form submission error", error);
-      toast.error("Failed to submit the form. Please try again.");
+      toast.error(
+        "Failed to submit the form. Please try again.",
+        (error as UnknownType).message
+      );
     }
   }
 

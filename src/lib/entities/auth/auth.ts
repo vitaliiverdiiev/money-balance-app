@@ -1,6 +1,8 @@
 import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     GitHub({
@@ -8,6 +10,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       clientSecret: process.env.AUTH_GITHUB_SECRET,
     }),
   ],
-  useSecureCookies: true,
-  debug           : true,
+  useSecureCookies: isProduction,
+  debug           : !isProduction,
 });

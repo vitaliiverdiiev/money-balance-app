@@ -1,3 +1,7 @@
 export { auth, handlers, signIn, signOut } from "./auth";
 
-export { SignInWithGithubButton, SignOutButton } from "./components";
+export {
+  SignInWithGithubButton,
+  SignInWithGoogleButton,
+  SignOutButton,
+} from "./components";
