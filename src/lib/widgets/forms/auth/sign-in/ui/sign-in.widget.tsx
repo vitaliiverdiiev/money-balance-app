@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/shared/ui";
-import { SignInWithGithubButton, SignInWithGoogleButton } from "@/entities";
+import { SignInWithSocialButtons } from "@/entities";
 import { AlreadyHaveAccount } from "@/features";
 import { SignInForm } from "./sign-in.form";
 
@@ -27,10 +27,7 @@ export const SignInWidget = () => {
         <div className="form-or-divider">
           <span>OR</span>
         </div>
-        <div className="flex items-center gap-4">
-          <SignInWithGoogleButton />
-          <SignInWithGithubButton />
-        </div>
+        <SignInWithSocialButtons />
       </CardFooter>
     </Card>
   );
