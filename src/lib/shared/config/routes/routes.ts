@@ -33,7 +33,7 @@ export const routes: Routes = {
   },
   todos: {
     label: "Todos",
-    path : () => "/todos",
+    path : () => "/test/todos",
   },
   signIn: {
     label: "Sign in",

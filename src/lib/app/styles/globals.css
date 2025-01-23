@@ -27,6 +27,9 @@ body {
   .flex-center {
     @apply flex items-center justify-center;
   }
+  ::selection {
+    @apply text-white bg-green-600;
+  }
 }
 
 @layer base {

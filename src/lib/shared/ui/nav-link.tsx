@@ -11,7 +11,7 @@ export const NavLink: React.FC<Props> = ({ href, label, currentPath }) => {
   const currentStyles =
     // normalizePath(href) === normalizePath(currentPath)
     href.toLowerCase() === currentPath.toLowerCase()
-      ? "font-bold text-brand-dark"
+      ? "font-bold text-green-600"
       : "";
 
   return (
