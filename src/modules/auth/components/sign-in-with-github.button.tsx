@@ -1,5 +1,5 @@
-import { signIn } from "@/entities";
 import { Button, Icon } from "@/shared/ui";
+import { signIn } from "../auth";
 
 export const SignInWithGithubButton = () => {
   return (

@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/shared/ui";
-import { SignInWithSocialButtons } from "@/entities";
 import { AlreadyHaveAccount } from "@/features";
 import { SignInForm } from "./sign-in.form";
+import { SignInWithSocialButtons } from "~/src/modules/auth/components";
 
 export const SignInWidget = () => {
   return (

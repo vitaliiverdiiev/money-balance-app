@@ -1,4 +1,4 @@
-import { signOut } from "@/entities";
+import { signOut } from "../auth";
 
 export function SignOutButton() {
   return (

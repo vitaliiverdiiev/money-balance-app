@@ -1,7 +1,8 @@
 import { Logo } from "@/widgets";
-import { auth, SignOutButton } from "@/entities";
 import { HeaderNav } from "./header-nav";
 import { HeaderAuthLinks } from "./header-auth-links";
+import { auth } from "~/src/modules/auth/auth";
+import { SignOutButton } from "~/src/modules/auth/components";
 
 export const Header: React.FC = async () => {
   const session = await auth();
