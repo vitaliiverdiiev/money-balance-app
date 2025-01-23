@@ -3,6 +3,7 @@ type RouteKey =
   | "dashboard"
   | "income"
   | "spendings"
+  | "todos"
   | "signIn"
   | "signUp";
 
@@ -29,6 +30,10 @@ export const routes: Routes = {
   spendings: {
     label: "Spendings",
     path : () => "/spendings",
+  },
+  todos: {
+    label: "Todos",
+    path : () => "/todos",
   },
   signIn: {
     label: "Sign in",
