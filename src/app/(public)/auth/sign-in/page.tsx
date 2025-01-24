@@ -1,5 +1,5 @@
-import { SignInPage } from "@/pages";
+import { SignUpPage } from "@/modules/auth";
 
 export default async function Page() {
-  return <SignInPage />;
+  return <SignUpPage />;
 }

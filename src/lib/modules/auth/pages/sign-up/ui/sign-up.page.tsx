@@ -1,8 +1,10 @@
+import { SignUpForm } from "@/modules/auth/features/forms/sign-up.form";
+
 export const SignUpPage = async () => {
   return (
     <main>
       <div className="container">
-        <h2>Sign UP page</h2>
+        <SignUpForm />
       </div>
     </main>
   );
