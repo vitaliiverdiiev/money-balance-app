@@ -8,7 +8,7 @@ import {
 } from "@/shared/ui";
 import { AlreadyHaveAccount } from "@/features";
 import { SignInForm } from "./sign-in.form";
-import { SignInWithSocialButtons } from "~/src/modules/auth/components";
+import { SignInWithSocialButtons } from "~/src/modules/_auth/components";
 
 export const SignInWidget = () => {
   return (
